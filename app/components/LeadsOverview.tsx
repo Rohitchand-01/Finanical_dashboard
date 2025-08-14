@@ -109,7 +109,7 @@ const LeadsOverview = () => {
   }
 
   return (
-    <div className="bg-white shadow-md m-4 border border-gray-300 w-[900px] overflow-hidden">
+    <div className="bg-white shadow-md m-4 border border-gray-300 w-[710px] overflow-hidden">
       {/* Header */}
       <div className="p-2 bg-gray-200 flex justify-between items-center border-b border-gray-300">
         <h2 className="text-lg font-semibold text-gray-800">Leads Overview</h2>

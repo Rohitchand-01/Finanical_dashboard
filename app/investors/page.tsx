@@ -13,7 +13,7 @@ const page = (props: Props) => {
             <div className='w-[50px] mr-2 bg-white '>
                 <Sidebar/>
             </div>
-            <div className='w-full'>
+            <div>
                 <Investor/>
             </div>
         </div>

@@ -29,7 +29,7 @@ const page = (props: Props) => {
             <AssetsUnderManagement />
             <MarketOverview />
           </div>
-          <div className='  w-[1630px]'>
+          <div className='  w-[1400px]'>
             <CapitalBox />
           </div>
           <div className='flex'>

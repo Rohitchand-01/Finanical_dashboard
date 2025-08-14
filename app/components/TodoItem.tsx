@@ -60,7 +60,7 @@ const TodosSection = () => {
   const pendingTodos = todos.filter(todo => todo.type === 'Pending Transaction')
 
   return (
-    <div className='bg-white shadow-md  w-[800px] border border-gray-300 m-2'>
+    <div className='bg-white shadow-md  w-[600px] border border-gray-300 m-2'>
       {/* Header */}
       <div className='flex items-center justify-between p-3 border-b border-gray-300 bg-gray-100'>
         <div className='flex items-center space-x-2'>
