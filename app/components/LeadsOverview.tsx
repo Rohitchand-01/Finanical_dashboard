@@ -72,7 +72,7 @@ const LeadsOverview = () => {
       },
       {
         label: 'WhatsApp',
-        data: [ 2700,1100, 300, 1300, 2600, ],
+        data: [2700, 1100, 300, 1300, 2600],
         borderColor: colors[2],
         backgroundColor: colors[2],
         tension: 0.4,
@@ -89,19 +89,17 @@ const LeadsOverview = () => {
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
-      legend: { display: true, position: 'bottom' },
+      legend: { display: true, position: 'bottom' as const },
       tooltip: { enabled: true }
     },
     scales: {
       x: { grid: { display: false } },
       y: {
         min: 0,
-        max: 4000, // scale fixed to 2000
+        max: 4000,
         ticks: {
           stepSize: 1000,
-          callback: function (value) {
-            return value // show raw numbers
-          }
+          callback: (value: number | string) => value
         },
         grid: { color: 'hsl(var(--border))' }
       }
@@ -109,8 +107,7 @@ const LeadsOverview = () => {
   }
 
   return (
-    <div className="bg-white shadow-md m-4 border border-gray-300 w-[710px] overflow-hidden">
-      {/* Header */}
+    <div className="bg-white shadow-md m-4 border border-gray-300 w-full max-w-[710px] overflow-hidden">
       <div className="p-2 bg-gray-200 flex justify-between items-center border-b border-gray-300">
         <h2 className="text-lg font-semibold text-gray-800">Leads Overview</h2>
         <div className="flex gap-2">
@@ -119,10 +116,9 @@ const LeadsOverview = () => {
         </div>
       </div>
 
-      {/* Charts side by side */}
-      <div className="flex p-4 h-[350px]">
-        {/* Pie Chart - 50% width */}
-        <div className="flex flex-col items-center w-1/2 h-full">
+      <div className="flex flex-col sm:flex-row p-4 h-[350px] gap-4">
+        {/* Pie Chart */}
+        <div className="flex flex-col items-center w-full sm:w-1/2 h-full">
           <div className="text-sm font-medium text-gray-800 mb-2">Channels</div>
           <div className="flex-1 w-full">
             <Doughnut data={pieData} options={pieOptions} />
@@ -140,11 +136,11 @@ const LeadsOverview = () => {
           </div>
         </div>
 
-        {/* Line Chart - 50% width */}
-        <div className="flex flex-col w-1/2 h-full">
+        {/* Line Chart */}
+        <div className="flex flex-col w-full sm:w-1/2 h-full">
           <div className="text-lg font-medium text-gray-800 mb-2 text-center">Prospect Comparison</div>
           <div className="bg-blue-300 p-2 text-center mb-2">
-            <div className="text-2xl font-bold mb-3 ">6,000</div>
+            <div className="text-2xl font-bold mb-3">6,000</div>
           </div>
           <div className="flex-1">
             <Line data={lineData} options={lineOptions} />
