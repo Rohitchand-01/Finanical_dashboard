@@ -1,0 +1,10 @@
+[
+  {"id":1,"name":"Aarav Mehta","email":"aarav.mehta@example.com","phone":"+91-9876543210","scheme":"BlueChip Growth","aum":1250000,"status":"Active"},
+  {"id":2,"name":"Meera Iyer","email":"meera.iyer@example.com","phone":"+91-9811122233","scheme":"Balanced Advantage","aum":820000,"status":"Prospect"},
+  {"id":3,"name":"Rohit Sharma","email":"rohit.sharma@example.com","phone":"+91-9898989898","scheme":"Tax Saver ELSS","aum":260000,"status":"Active"},
+  {"id":4,"name":"Kavya Nair","email":"kavya.nair@example.com","phone":"+91-9911223344","scheme":"BlueChip Growth","aum":430000,"status":"Churned"},
+  {"id":5,"name":"Aditya Singh","email":"aditya.singh@example.com","phone":"+91-9900332211","scheme":"Balanced Advantage","aum":1500000,"status":"Active"},
+  {"id":6,"name":"Sneha Gupta","email":"sneha.gupta@example.com","phone":"+91-7777000001","scheme":"Midcap Momentum","aum":540000,"status":"Prospect"},
+  {"id":7,"name":"Ishaan Verma","email":"ishaan.verma@example.com","phone":"+91-8888111100","scheme":"Tax Saver ELSS","aum":310000,"status":"Active"},
+  {"id":8,"name":"Nisha Kulkarni","email":"nisha.kulkarni@example.com","phone":"+91-9090909090","scheme":"Midcap Momentum","aum":720000,"status":"Active"}
+]
